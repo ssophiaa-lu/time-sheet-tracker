@@ -1,6 +1,6 @@
-# Workforce Time Tracking System (MVP)
+# Workforce Time Tracking System
 
-Minimum viable full-stack web app for employees to log hours and managers to approve timesheets.
+I built a full-stack web app for employees to log hours and managers to approve timesheets. This project simulates real time tracking and approval used in enterprise systems. It focuses on enforcing data integrity, role-based access control, and state transitions between employees and managers.
 
 ## Tech Stack
 
@@ -9,35 +9,14 @@ Minimum viable full-stack web app for employees to log hours and managers to app
 - Database: PostgreSQL
 - API: REST + session-based auth
 
-## Project Structure
+## Key Features
 
-```txt
-time-sheet-tracker/
-  backend/
-    src/
-      db.js
-      middleware/auth.js
-      utils/week.js
-      server.js
-    sql/
-      schema.sql
-      seed.sql
-    .env.example
-    package.json
-  frontend/
-    src/
-      api.js
-      components/StatusBadge.jsx
-      pages/LoginPage.jsx
-      pages/EmployeeDashboard.jsx
-      pages/ManagerDashboard.jsx
-      utils/date.js
-      App.jsx
-      main.jsx
-      index.css
-    .env.example
-    package.json
-```
+- Role-based dashboards (employee vs manager)
+- Time entry CRUD with validation
+- Weekly timesheet grouping and aggregation
+- Timesheet submission and approval workflow
+- Status tracking: draft, submitted, approved, rejected
+- Data integrity constraints (one timesheet per user/week)
 
 ## Demo Accounts
 
@@ -47,6 +26,20 @@ All users use password: `password123`
 - `employee2` (employee)
 - `manager1` (manager)
 
+## Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v18+ recommended)
+- npm
+- PostgreSQL
+- Git
+
+Verify installation:
+
+node -v  
+npm -v  
+psql --version
 ## Setup Instructions
 
 ### 1) Create database
@@ -156,7 +149,7 @@ curl -X POST http://localhost:4000/api/manager/timesheets/1/reject \
   -d '{"manager_comment":"Please add missing Friday hours."}'
 ```
 
-## MVP Rules Implemented
+## Rules Implemented
 
 - Weekly grouping uses Monday as `week_start`.
 - One timesheet per employee per week.
@@ -164,4 +157,3 @@ curl -X POST http://localhost:4000/api/manager/timesheets/1/reject \
 - Weekly totals shown in both dashboards.
 - Employees can edit/delete only while timesheet is not submitted or approved.
 - Managers can approve/reject submitted sheets and add rejection comment.
-# time-sheet-tracker
