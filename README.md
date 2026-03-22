@@ -2,6 +2,17 @@
 
 I built a full-stack web app for employees to log hours and managers to approve timesheets. This project simulates real time tracking and approval used in enterprise systems. It focuses on enforcing data integrity, role-based access control, and state transitions between employees and managers.
 
+
+# Demo
+<div>
+    <a href="https://www.loom.com/share/ee9d74e87aed49999ebfe24a87d4d4e7">
+      <p>Work Time Sheet Tracker Demo - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/ee9d74e87aed49999ebfe24a87d4d4e7">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ee9d74e87aed49999ebfe24a87d4d4e7-75807fd739f00b59-full-play.gif#t=0.1">
+    </a>
+  </div>
+  
 ## Tech Stack
 
 - Frontend: React + Vite
