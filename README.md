@@ -26,11 +26,9 @@ All users use password: `password123`
 - `employee2` (employee)
 - `manager1` (manager)
 
-## Prerequisites
+## Prereqs
 
-Make sure you have the following installed:
-
-- Node.js (v18+ recommended)
+- Node.js 
 - npm
 - PostgreSQL
 - Git
