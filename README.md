@@ -1,4 +1,4 @@
-# Workforce Time Tracking System
+# Work Time Tracking System
 
 I built a full-stack web app for employees to log hours and managers to approve timesheets. This project simulates real time tracking and approval used in enterprise systems. It focuses on enforcing data integrity, role-based access control, and state transitions between employees and managers.
 
